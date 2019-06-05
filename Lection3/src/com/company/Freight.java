@@ -16,5 +16,4 @@ public class Freight extends Train {
     public double currentPower() {
         return super.getWeightCarriage() + getFreight();
     }
-
 }
