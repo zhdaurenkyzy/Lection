@@ -9,12 +9,17 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число: 1-Пассажирский/ 2-Грузовой: ");
+        while(true){
         int trainType = sc.nextInt();
+            if((trainType<1)||(trainType>=3)) {
+                System.out.println("Введите еще раз");
+                continue;
+            }
         System.out.println("Введите мощность, кН:");
         double power = sc.nextDouble();
         System.out.println("Введите кол-во вагонов");
         int count = sc.nextInt();
-
+        }
         if (trainType == 1) {
             System.out.println("Введите кол-во пассажиров");
             int people = sc.nextInt();
