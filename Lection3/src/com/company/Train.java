@@ -8,7 +8,6 @@ public class Train {
     private double weightLocomotive;
     final static double a = 10.2;
 
-
     Train(double power, int countCarriage) {
         this.power = power;
         this.countCarriage = countCarriage;
