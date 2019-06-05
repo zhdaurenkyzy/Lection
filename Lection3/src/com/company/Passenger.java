@@ -17,11 +17,8 @@ public class Passenger extends Train {
         setNumberOfPass(numberOfPass);
     }
 
-
-
     @Override
     public double currentPower() {
         return super.getWeightCarriage() + (getNumberOfPass() * 0.1);
     }
-
 }
